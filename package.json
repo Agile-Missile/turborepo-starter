@@ -1,0 +1,77 @@
+{
+  "name": "agile-turborepo-starter",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "agile turborepo 模版项目",
+  "keywords": [
+    "agile",
+    "turborepo",
+    "agile docs"
+  ],
+  "author": {
+    "name": "ShunQuan Wang",
+    "url": "https://github.com/tclxshunquan-wang"
+  },
+  "workspaces": [
+    "docs",
+    "packages/*"
+  ],
+  "scripts": {
+    "g:clean": "turbo run clean",
+    "g:build": "yarn g:build-release",
+    "?build-release": "When https://github.com/atlassian/changesets/issues/432 has a solution we can remove this trick",
+    "g:build-release": "turbo run build-release",
+    "g:test": "turbo run test",
+    "g:test-unit": "turbo run test-unit",
+    "g:test-e2e": "turbo run test-e2e",
+    "g:test-coverage": "turbo run test-coverage",
+    "g:lint": "turbo run lint --color",
+    "g:typecheck": "turbo run typecheck",
+    "g:lint-staged-files": "lint-staged --allow-empty",
+    "g:fix-all-files": "turbo run fix-all-files",
+    "g:changeset": "changeset",
+    "g:version": "changeset version",
+    "g:release": "yarn g:build-release && changeset publish",
+    "g:cz": "cz",
+    "g:publish-local": "yarn changeset version && cd scripts && ./publish-to-verdaccio.sh",
+    "clean:global-cache": "rimraf --no-glob ./.cache",
+    "nuke:node_modules": "rimraf '**/node_modules'",
+    "check:install": "yarn dlx @yarnpkg/doctor@3.1.4 .",
+    "install:playwright": "npx playwright install",
+    "postinstall": "is-ci || yarn husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "cross-env": "7.0.3"
+  },
+  "devDependencies": {
+    "@changesets/changelog-git": "0.2.0",
+    "@changesets/cli": "2.27.7",
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@hyperse/eslint-config-hyperse": "^1.0.8",
+    "commitizen": "4.3.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^9.10.0",
+    "husky": "9.0.11",
+    "is-ci": "3.0.1",
+    "lint-staged": "15.2.7",
+    "minimist": "1.2.8",
+    "npm-run-all": "4.1.5",
+    "rimraf": "5.0.7",
+    "terser": "5.31.1",
+    "turbo": "2.1.2",
+    "typescript": "5.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": "please-use-yarn",
+    "yarn": ">=1.22.0"
+  },
+  "packageManager": "yarn@4.3.0"
+}

@@ -1,0 +1,51 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+      "build": {
+        "dependsOn": ["^build"],
+        "outputs": [
+          "build/**",
+          ".vercel/**",
+          "dist/**",
+          ".next/**",
+          "!.next/cache/**"
+        ]
+      },
+      "build-release": {
+        "dependsOn": ["^build"]
+      },
+      "test": {
+        "outputs": [],
+        "dependsOn": []
+      },
+      "test-unit": {
+        "outputs": [],
+        "dependsOn": []
+      },
+      "test-e2e": {
+        "outputs": [],
+        "dependsOn": []
+      },
+      "test-coverage": {
+        "outputs": ["coverage/**"],
+        "dependsOn": []
+      },
+      "lint": {
+        "dependsOn": ["^build"]
+      },
+      "typecheck": {
+        "dependsOn": ["^build"]
+      },
+      "fix-all-files": {
+        "dependsOn": ["^build"]
+      },
+      "dev": {
+        "dependsOn": ["^build"],
+        "cache": false,
+        "persistent": true
+      },
+      "clean": {
+        "cache": false
+      }
+    }
+  }

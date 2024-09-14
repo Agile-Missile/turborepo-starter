@@ -1,0 +1,29 @@
+/node_modules
+/.next/
+.DS_Store
+.vercel
+public/.nextra
+tsconfig.tsbuildinfo
+
+.env.local
+public/robots.txt
+public/sitemap.xml
+public/sitemap-0.xml
+# dependencies
+node_modules
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# testing
+/coverage
+.out/
+.cache
+# Build directories (next.js...)
+/.next/
+/out/
+/build

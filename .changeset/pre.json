@@ -1,0 +1,9 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {},
+  "changesets": [
+    "beige-dolls-unite",
+    "little-snails-wash"
+  ]
+}

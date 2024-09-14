@@ -1,0 +1,8 @@
+{
+  "dep": "prod,dev,bundle,peer,optional",
+  "reject": [
+    "react",
+    "react-dom",
+    "immer"
+  ]
+}
