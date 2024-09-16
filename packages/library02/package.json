@@ -24,6 +24,7 @@
     "lint": "eslint . --cache --cache-location ../../.cache/eslint/forge.eslintcache",
     "test": "run-s test-unit",
     "test-task": "vitest run",
+    "test-coverage": "vitest run --coverage",
     "test-unit": "vitest run --passWithNoTests",
     "test-watch": "vitest watch --ui",
     "fix-all-files": "eslint . --fix",

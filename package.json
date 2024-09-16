@@ -24,7 +24,6 @@
     "g:build-release": "turbo run build-release",
     "g:test": "turbo run test",
     "g:test-unit": "turbo run test-unit",
-    "g:test-e2e": "turbo run test-e2e",
     "g:test-coverage": "turbo run test-coverage",
     "g:lint": "turbo run lint --color",
     "g:typecheck": "turbo run typecheck",
