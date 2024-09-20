@@ -46,7 +46,7 @@
     ],
     "typescript.tsdk": "root/node_modules/typescript/lib",
     "[json]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "[jsonc]": {
       "editor.defaultFormatter": "dbaeumer.vscode-eslint"
