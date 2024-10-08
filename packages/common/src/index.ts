@@ -1,3 +1,3 @@
 export const fun = () => {
-  return 'library02';
+  return '@agile/common';
 };

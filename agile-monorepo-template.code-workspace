@@ -9,12 +9,16 @@
       "path": "docs",
     },
     {
-      "name": "library01",
-      "path": "packages/library01",
+      "name": "common",
+      "path": "packages/common",
     },
     {
-      "name": "library02",
-      "path": "packages/library02",
+      "name": "utils",
+      "path": "packages/utils",
+    },
+    {
+      "name": "rolldown",
+      "path": "packages/rolldown",
     },
   ],
   "extensions": {
@@ -41,8 +45,9 @@
     // https://github.com/Microsoft/vscode-eslint#mono-repository-setup
     "eslint.workingDirectories": [
       "./docs",
-      "./packages/library01",
-      "./packages/library02",
+      "./packages/common",
+      "./packages/utils",
+      "./packages/rolldown",
     ],
     "typescript.tsdk": "root/node_modules/typescript/lib",
     "[json]": {
