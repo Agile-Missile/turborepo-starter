@@ -8,18 +8,8 @@
     "noEmit": false,
     "incremental": true,
     "paths": {},
-    "types": [
-      "vitest/globals"
-    ]
+    "types": ["vitest/globals"]
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "**/node_modules",
-    "**/.*/",
-    "dist",
-    "build"
-  ]
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/.*/", "dist", "build"]
 }

@@ -10,12 +10,6 @@
     "baseUrl": "./",
     "paths": {}
   },
-  "include": [
-    "./src/index.ts"
-  ],
-  "exclude": [
-    "**/*.stories.tsx",
-    "**/*.stories.mdx",
-    ".storybook/**"
-  ]
+  "include": ["./src/index.ts"],
+  "exclude": ["**/*.stories.tsx", "**/*.stories.mdx", ".storybook/**"]
 }

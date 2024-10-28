@@ -7,13 +7,6 @@
     "moduleResolution": "nodenext",
     "paths": {}
   },
-  "include": [
-    "./src/index.ts"
-  ],
-  "exclude": [
-    "**/*.stories.tsx",
-    "**/*.stories.mdx",
-    ".storybook/**",
-    "dist"
-  ]
+  "include": ["./src/index.ts"],
+  "exclude": ["**/*.stories.tsx", "**/*.stories.mdx", ".storybook/**", "dist"]
 }
